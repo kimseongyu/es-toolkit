@@ -2,10 +2,12 @@ import { bench, describe } from 'vitest';
 import { sum as sumToolkit_ } from 'es-toolkit';
 import { sum as sumToolkitCompat_ } from 'es-toolkit/compat';
 import { sum as sumLodash_ } from 'lodash';
+import { sum as sumWasm_ } from '../../wasm/pkg/wasm';
 
 const sumToolkit = sumToolkit_;
 const sumToolkitCompat = sumToolkitCompat_;
 const sumLodash = sumLodash_;
+const sumWasm = sumWasm_;
 
 describe('sum', () => {
   bench('es-toolkit/sum', () => {
@@ -18,6 +20,10 @@ describe('sum', () => {
 
   bench('lodash/sum', () => {
     sumLodash([1, 2, 3]);
+  });
+
+  bench('wasm/sum', () => {
+    sumWasm([1, 2, 3]);
   });
 });
 
@@ -34,5 +40,9 @@ describe('sum/largeArray', () => {
 
   bench('lodash/sum', () => {
     sumLodash(largeArray);
+  });
+
+  bench('wasm/sum', () => {
+    sumWasm(largeArray);
   });
 });
