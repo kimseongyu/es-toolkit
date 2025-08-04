@@ -5203,6 +5203,8 @@ __metadata:
     typescript: "npm:^5.8.2"
     typescript-eslint: "npm:^8.6.0"
     vercel: "npm:^41.4.1"
+    vite-plugin-wasm: "npm:^3.5.0"
+    vite-plugin-wasm-pack: "npm:^0.1.12"
     vitest: "npm:^2.1.2"
   dependenciesMeta:
     "@trivago/prettier-plugin-sort-imports@4.3.0":
@@ -6258,6 +6260,17 @@ __metadata:
     jsonfile: "npm:^6.0.1"
     universalify: "npm:^2.0.0"
   checksum: 10c0/8085a078ead6a95711cc3cb689f9a64ad7393a1cdf7ed1bdab9dbef384f4a8fac941d20b1eb3067c427c82730a1078f9cfe93d86b98e848ee5445024ad0a3fa4
+  languageName: node
+  linkType: hard
+
+"fs-extra@npm:^10.0.0":
+  version: 10.1.0
+  resolution: "fs-extra@npm:10.1.0"
+  dependencies:
+    graceful-fs: "npm:^4.2.0"
+    jsonfile: "npm:^6.0.1"
+    universalify: "npm:^2.0.0"
+  checksum: 10c0/5f579466e7109719d162a9249abbeffe7f426eb133ea486e020b89bc6d67a741134076bf439983f2eb79276ceaf6bd7b7c1e43c3fd67fe889863e69072fb0a5e
   languageName: node
   linkType: hard
 
@@ -8117,6 +8130,13 @@ __metadata:
   bin:
     nanoid: bin/nanoid.cjs
   checksum: 10c0/4515abe53db7b150cf77074558efc20d8e916d6910d557b5ce72e8bbf6f8e7554d3d7a0d180bfa65e5d8e99aa51b207aa8a3bf5f3b56233897b146d592e30b24
+  languageName: node
+  linkType: hard
+
+"narrowing@npm:^1.4.0":
+  version: 1.5.0
+  resolution: "narrowing@npm:1.5.0"
+  checksum: 10c0/cad2ddf762ef8271ed6b3deda8a89438670e2eb8b292aed4c21d72996624d26823211b8b0aa5aae5d88ae6a48418eeee4387b1a1e248c344e06af8ed9841c43f
   languageName: node
   linkType: hard
 
@@ -10927,6 +10947,26 @@ __metadata:
   bin:
     vite-node: vite-node.mjs
   checksum: 10c0/7bef84ee757373cc3d171aba51299389e31cb39265df7beef3bb4b70edf1f99425577cd70b9048d357653a0247e8c20f2aa62579d57b2cfc8d74cd6945828b7f
+  languageName: node
+  linkType: hard
+
+"vite-plugin-wasm-pack@npm:^0.1.12":
+  version: 0.1.12
+  resolution: "vite-plugin-wasm-pack@npm:0.1.12"
+  dependencies:
+    chalk: "npm:^4.1.2"
+    fs-extra: "npm:^10.0.0"
+    narrowing: "npm:^1.4.0"
+  checksum: 10c0/3536b10122a1bf5b7c89503953220969073135561dbcf1bb6657695091408ed107718a544998d17a69e4af62be580fff1046a39555deca898c3224027772b595
+  languageName: node
+  linkType: hard
+
+"vite-plugin-wasm@npm:^3.5.0":
+  version: 3.5.0
+  resolution: "vite-plugin-wasm@npm:3.5.0"
+  peerDependencies:
+    vite: ^2 || ^3 || ^4 || ^5 || ^6 || ^7
+  checksum: 10c0/39d77b60eb10aececd41e7592ef109fb3404ea1cc3275238eb627e8f3fca9796a4f501fdbee402e7f8c8cbc0aa87b4cae5efcf7fd7de75bbf194b733558661a1
   languageName: node
   linkType: hard
 

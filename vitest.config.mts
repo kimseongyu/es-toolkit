@@ -1,7 +1,9 @@
 import { defineConfig } from 'vitest/config';
+import wasm from 'vite-plugin-wasm';
 import packageJson from './package.json';
 
 export default defineConfig({
+  plugins: [wasm()],
   test: {
     name: packageJson.name,
     exclude: ['./benchmarks/**/*', '.yarn/**/*'],

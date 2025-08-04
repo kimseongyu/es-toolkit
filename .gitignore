@@ -36,3 +36,6 @@ umd
 /util.js
 
 /test
+
+wasm/target
+Cargo.lock
